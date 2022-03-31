@@ -1,0 +1,105 @@
+$color-borbottop: rgb(221,221,211);
+$color-home:rgb(130, 98, 181);
+$color-black: rgb(34,34,34);
+$topmenu-text: rgb(82,82,82);
+
+@font-face{
+    font-family: 'Open Sans',sans-serif;
+    src: url('/exerciseaht/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
+    font-weight: 700;
+    display: block;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    display: block;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    display: block;
+    font-style: normal;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.header{
+    border-bottom: 1px solid $color-borbottop;
+    
+    &-menu{
+        &_topmenu{
+            height: 46px;
+            background-color: $color-black;
+            padding: 0;
+            margin: 0;
+            color: $topmenu-text;
+            font-size: 14px;
+            font-family: "Open Sans",sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+
+            &_greets{
+                margin-left: 30px;
+            }
+
+            &_list{
+                margin-bottom: 0px;
+                margin-right:30px;
+                .list_items{
+                    padding-left: 30px;
+                }
+            }
+        }
+
+        &__mainmenu{
+            margin-left: 30px;
+            height: 79px;
+
+            &__franco{
+                display: border-box;
+                border: 2px solid black;
+                padding: 10px 0px 10px 16px;
+                font-size: 20px;
+                font-family: "Montserrat";
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 0.75;
+                letter-spacing: 16px;
+            }
+
+            &__list{
+                padding-bottom: 0;
+
+                .list__items{
+                    &:first-child{
+                        color: $color-home;
+                    }
+                    padding-left: 57px;
+                    text-transform: uppercase;
+                    padding-top: 10px;
+                    font-size: 14px;
+                    font-family: "Montserrat";
+                    font-weight: bold;
+                }
+            }
+            
+            &__cart{
+                margin-right: 30px;
+                font-size: 30px;
+                margin-bottom: 0;
+                .cart__list{
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,146 @@
+$color-purple: rgb(130, 98, 181);
+$color-black: rgb(0,0,0);
+$color-bluwhi: rgb(161,209,221);
+$color-white: rgb(255,255,255);
+$color-greybd: rgb(237,237,237);
+$color-greyicon: rgb(200,200,200);
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+}
+
+@font-face{
+    font-family: 'Open Sans', sans-serif;
+    src: url('/exerciseaht/fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.slider{
+    background-image: url('/exerciseaht/assets/image/bg-slider.jpg');
+
+    p{
+        &:first-child{
+            color: $color-purple;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 5px;
+            padding-top:75px;
+            margin-bottom: 5px;
+        }
+        font-family: 'Montserrat';
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: $color-black;
+    }
+
+    span{
+        height: 1px;
+        width: 50px;
+        color: $color-purple;
+        display:inline-block;
+        border-bottom: solid;
+        padding-top: 5px;
+    }
+
+    &-element{
+        padding-top: 50px;
+        padding-bottom: 112px;
+        &__detail{
+            position: relative;
+            background-color: $color-white;
+
+            .block{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-color: $color-bluwhi;
+                top: 6%;
+                left: 6%;
+
+                ul{
+                    width: 48px;
+                    height: 48px;
+                    border: 1px solid $color-white;
+                    margin: 6px 5px 4px 5px;
+                    text-align: center;
+                    color: $color-white;
+                    
+                    li{
+                        &:first-child{
+                            font-family: 'Montserrat';
+                            font-weight: 400;
+                        }
+                        font-family: 'Montserrat';
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .detail-title{
+                padding: 15px 20px 20px 20px;
+                font-size: 16px;
+                color: $color-black;
+                line-height: 1.225;
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 600;
+            }
+
+            .detail-title:hover{
+                color: $color-purple;
+                cursor: pointer;
+            }
+
+            .paragr{
+                padding: 0 20px 23px 20px;    
+                font-size: 14px;
+                color: $color-black;
+                line-height: 1.571;
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                border-bottom: 1px solid $color-greybd ;
+            }
+
+            .client-react{
+                padding: 14px 20px 16px 20px;
+                line-height: 1.571;
+                font-size: 14px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 500;
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;
+                    color: $color-greyicon;
+                    padding-right: 32px;
+                }
+                i{
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
