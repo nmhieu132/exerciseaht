@@ -35,7 +35,7 @@ ul,li{
     }
 
     &-sell{
-        &_descr{
+        &__descr{
 
             .franco{
                 font-size: 12px;
@@ -49,7 +49,7 @@ ul,li{
                 margin-bottom: 10px;
             }
 
-            .feature_item{
+            .feature__item{
                 font-size: 24px;
                 font-family: "Montserrat";
                 color:$color-black;
@@ -61,7 +61,7 @@ ul,li{
                 margin-bottom: 23px;
             }
 
-            .custom_line{
+            .custom__line{
                 width: 50px;
                 height: 2px;
                 color: $color-franco;
@@ -72,7 +72,17 @@ ul,li{
     }
     &-items{
         padding-top: 50px;
-        &_detail{
+
+        &__row{
+            padding-bottom: 30px;
+        }
+
+        &__col{
+            width: 25%;
+            margin-right: 30px;
+        }
+
+        &__detail{
             position: relative;
 
             .buttn{

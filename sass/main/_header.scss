@@ -35,7 +35,7 @@ ul,li{
     border-bottom: 1px solid $color-borbottop;
     
     &-menu{
-        &_topmenu{
+        &__topmenu{
             height: 46px;
             background-color: $color-black;
             padding: 0;
@@ -46,14 +46,14 @@ ul,li{
             font-weight: 700;
             line-height: 1.2;
 
-            &_greets{
+            &__greets{
                 margin-left: 30px;
             }
 
-            &_list{
+            &__list{
                 margin-bottom: 0px;
                 margin-right:30px;
-                .list_items{
+                .list__items{
                     padding-left: 30px;
                 }
             }

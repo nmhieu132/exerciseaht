@@ -25,14 +25,14 @@
         <div class="header">
             <div class="container-fluid"></div>
                 <div class="header-menu">
-                    <div class="header-menu_topmenu d-flex justify-content-between align-items-center">
-                        <div class="header-menu_topmenu_greets">
+                    <div class="header-menu__topmenu d-flex justify-content-between align-items-center">
+                        <div class="header-menu__topmenu__greets">
                             <i class="fa-regular fa-bookmark"></i>
                             Welcome to Franco-an e-Commerce PSD Template!
                         </div>
-                        <ul class="header-menu_topmenu_list d-flex align-item-center">
-                            <li class="list_items"><i class="fa-solid fa-gear"></i> Shop Setting</li>
-                            <li class="list_items"><i class="fa-solid fa-lock"></i> Member Login</li>
+                        <ul class="header-menu__topmenu__list d-flex align-item-center">
+                            <li class="list__items"><i class="fa-solid fa-gear"></i> Shop Setting</li>
+                            <li class="list__items"><i class="fa-solid fa-lock"></i> Member Login</li>
                         </ul>
                     </div>
                     <div class="header-menu__mainmenu d-flex justify-content-between align-items-center">
@@ -88,16 +88,16 @@
         <div class="products">
             <div class="container">
                 <div class="products-sell d-flex justify-content-start align-items-center">
-                    <div class="products-sell_descr">
+                    <div class="products-sell__descr">
                         <p class="franco">franco</p>
-                        <p class="feature_item">featured items</p>
-                        <span class="custom_line"></span>
+                        <p class="feature__item">featured items</p>
+                        <span class="custom__line"></span>
                     </div>
                 </div>
-                <div class="products-items d-flex align-items-center">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                <div class="products-items">
+                    <div class="products-items__row d-flex ">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/watch.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -116,8 +116,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/girlbag.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -136,8 +136,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/blackbag.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -155,8 +155,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/trenchcoach.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -175,8 +175,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                    </div>
+                    <div class="products-items__row d-flex ">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/menbag.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -195,8 +197,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/sandals.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -215,8 +217,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/girlbag2.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -234,8 +236,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="products-items_detail">
+                        <div class="products-items__col">
+                            <div class="products-items__detail">
                                 <img src="./assets/image/blackbag2.jpg"/>
                                 <button class="buttn" type="button">add to cart</button>
                                 <ul class="list d-flex flex-column">
@@ -266,9 +268,9 @@
                     <p>News & Events</p>
                     <span class="custom-line"></span>
                 </div>
-                <div class="slider-element d-flex justify-content-center align-items-center">
-                    <div class="row">
-                        <div class="col-lg-4">
+                <div class="slider-element">
+                    <div class="slider-element__row d-flex">
+                        <div class="slider-element__col">
                             <div class="slider-element__detail">
                                 <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
                                 <div class="block">
@@ -285,7 +287,7 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="slider-element__col">
                             <div class="slider-element__detail">
                                 <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
                                 <div class="block">
@@ -302,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="slider-element__col" >
                             <div class="slider-element__detail">
                                 <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
                                 <div class="block">
@@ -319,17 +321,91 @@
                                 </div>
                             </div>
                         </div>
-                            
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <div class="container-fluid">
-                <div class="slider-title d-flex flex-column align-items-center justify-content-center">
-                    <p>Latest</p>
-                    <p>News & Events</p>
-                    <span class="custom-line"></span>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-content__row d-flex ">
+                        <div class="footer-content__colside">
+                            <div class="content-title">About Franco</div>
+                            <span class="break-line"></span>
+                            <div class="content-descr">Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum</div>
+                            <ul class="list-icon d-flex">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                                <li><i class="fa-brands fa-behance"></i></li>
+                                <li><i class="fa-solid fa-basketball"></i></li>
+                            </ul>
+                        </div>
+                        <div class="footer-content__colmid">
+                            <div class="content-title">Navigation</div>
+                            <span class="break-line"></span>
+                            <div class="content-descr">
+                                <div class="content-descr__row d-flex justify-content-start">
+                                    <div class="content-descr__col">
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>About Us</li>
+                                            <li>Our Blog</li>
+                                            <li>Women</li>
+                                            <li>Men</li>
+                                            <li>Contact Us</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-descr__col">
+                                        <ul>
+                                            <li>FAQs</li>
+                                            <li>Featured Brands</li>
+                                            <li>Gift Vouchers</li>
+                                            <li>Affiliates</li>
+                                            <li>Specials Gift</li>
+                                            <li>Terms & Conditions</li>
+                                        </ul>
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+                        <div class="footer-content__colside">
+                            <div class="content-title">Shop location</div>
+                            <span class="break-line"></span>
+                            <div class="content-descr">
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa-regular fa-map"></i></td>
+                                            <td><a href=""> 500 Hennessy Road <br> Causeway Bay, Hong Kong</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa-solid fa-phone"></i></td>
+                                            <td><a href="tel:+1 23456789">+1 23456789</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa-regular fa-envelope"></i></td>
+                                            <td><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></td>
+                                        </tr>
+                                    </table>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="footer-copyright__content d-flex justify-content-between">
+                        <div class="copyright-aht">
+                            <i class="fa-regular fa-copyright"></i> Copyright 2015 & Made with <i class="fa-solid fa-heart"></i> by Arrowhitech
+                        </div>
+                        <div class="list-icons">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-discover"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
