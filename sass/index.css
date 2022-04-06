@@ -61,15 +61,19 @@ ul, li {
 }
 
 .header-menu__mainmenu__franco {
-  display: border-box;
-  border: 2px solid black;
-  padding: 10px 0px 10px 16px;
+  position: relative;
+}
+
+.header-menu__mainmenu__franco .franco {
   font-size: 20px;
   font-family: "Montserrat";
   font-weight: 800;
   text-transform: uppercase;
   line-height: 0.75;
-  letter-spacing: 16px;
+  letter-spacing: 15px;
+  position: absolute;
+  top: 32%;
+  left: 8%;
 }
 
 .header-menu__mainmenu__list {
@@ -143,6 +147,7 @@ ul, li {
   font-size: 30px;
   font-family: "Pacifico";
   line-height: 1.2;
+  letter-spacing: 0.1px;
 }
 
 .banner-ad__horizontal__ad01 .ad01-btn {
@@ -172,7 +177,7 @@ ul, li {
 .banner-ad__vertical__ad02 .ad02__descr1 {
   position: absolute;
   font-size: 16px;
-  letter-spacing: 3.5px;
+  letter-spacing: 3.3px;
   font-family: "Montserrat";
   color: #525252;
   top: 42%;
@@ -228,9 +233,9 @@ ul, li {
   position: absolute;
   color: white;
   background-color: #8262b5;
-  width: 106px;
+  width: 108px;
   height: 40px;
-  left: 10.5%;
+  left: 11.5%;
   top: 58%;
   text-decoration: none;
   font-size: 14px;
@@ -238,6 +243,7 @@ ul, li {
   font-weight: 400;
   text-align: center;
   padding-top: 8px;
+  padding-left: 5px;
 }
 
 ul, li {
@@ -262,7 +268,7 @@ ul, li {
 }
 
 .products {
-  padding: 77px;
+  padding: 77px 77px 30px 77px;
 }
 
 .products .container {
@@ -278,7 +284,7 @@ ul, li {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   margin-bottom: 10px;
 }
 
@@ -290,7 +296,7 @@ ul, li {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
   margin-bottom: 23px;
 }
 
@@ -321,14 +327,14 @@ ul, li {
 
 .products-items__detail .buttn {
   position: absolute;
-  top: 69%;
-  left: 1.9%;
+  top: 67.9%;
+  left: 1.85%;
   font-size: 12px;
   font-family: 'Montserrat';
   color: #525252;
   text-transform: uppercase;
   font-weight: 600;
-  line-height: 2.167;
+  line-height: 3.167;
   outline: none;
   border: none;
   background-color: white;
@@ -342,7 +348,7 @@ ul, li {
 }
 
 .products-items__detail .list {
-  padding-top: 10px;
+  padding-top: 11px;
 }
 
 .products-items__detail .list .text {
@@ -351,12 +357,13 @@ ul, li {
   color: black;
   line-height: 1.857;
   font-weight: 600;
+  letter-spacing: -0.24px;
 }
 
 .products-items__detail .list .rating {
   font-size: 10px;
   color: #c7c6c6;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .products-items__detail .list .rating .checker {
@@ -364,7 +371,7 @@ ul, li {
 }
 
 .products-items__detail .list .cost {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .products-items__detail .list .cost .price {
@@ -376,6 +383,7 @@ ul, li {
 .products-items__detail .list .cost .discount {
   color: #8262b5;
   font-weight: 700;
+  padding-left: 1px;
 }
 
 @font-face {
@@ -411,8 +419,8 @@ a {
 }
 
 .slider .container {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .slider p {
@@ -421,6 +429,8 @@ a {
   text-transform: uppercase;
   font-size: 24px;
   color: black;
+  letter-spacing: 2.5px;
+  padding-left: 4px;
 }
 
 .slider p:first-child {
@@ -428,9 +438,10 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 5px;
-  padding-top: 75px;
+  letter-spacing: 6px;
+  margin-top: 76px;
   margin-bottom: 5px;
+  padding-left: 6px;
 }
 
 .slider .custom-line {
@@ -438,16 +449,17 @@ a {
   color: #8262b5;
   display: inline-block;
   border-bottom: 1px solid;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .slider-element {
   padding-top: 50px;
-  padding-bottom: 112px;
+  padding-bottom: 83px;
 }
 
 .slider-element__row .slick-dots {
-  bottom: -75px;
+  bottom: -48px;
+  padding-left: 5px;
 }
 
 .slider-element__row .slick-dots li button:hover:before {
@@ -455,9 +467,8 @@ a {
 }
 
 .slider-element__row .slick-dots li button:focus:before {
-  color: #8262b5;
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
 }
 
 .slider-element__row .slick-dots li button:before {
@@ -472,6 +483,7 @@ a {
 .slider-element__col {
   width: 33.33%;
   margin-right: 30px;
+  width: 360px;
 }
 
 .slider-element__detail {
@@ -484,15 +496,15 @@ a {
   width: 60px;
   height: 60px;
   background-color: #a1d1dd;
-  top: 6%;
-  left: 6%;
+  top: 5.96%;
+  left: 5.7%;
 }
 
 .slider-element__detail .block ul {
   width: 48px;
   height: 48px;
   border: 1px solid white;
-  margin: 6px 5px 4px 5px;
+  margin: 5px 5px 4px 5px;
   text-align: center;
   color: white;
 }
@@ -506,6 +518,7 @@ a {
 .slider-element__detail .block ul li:first-child {
   font-family: 'Montserrat';
   font-weight: 400;
+  margin-top: 3px;
 }
 
 .slider-element__detail .detail-title {
@@ -585,37 +598,38 @@ a {
 }
 
 .footer-content__row {
-  padding-top: 62px;
+  padding-top: 58px;
 }
 
 .footer-content__colside {
   width: 30%;
-  margin-right: 130px;
+  margin-right: 71px;
 }
 
 .footer-content__colside .content-title {
   color: #f7f7f7;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0.75px;
 }
 
 .footer-content__colside .break-line {
-  height: 1px;
   width: 260px;
-  color: #f7f7f7;
   display: block;
-  border-bottom: solid;
-  margin-bottom: 30px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 22px;
 }
 
 .footer-content__colside .content-descr {
   color: #f7f7f7;
   font-size: 14px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   color: #888888;
+  letter-spacing: -0.46px;
+  line-height: 21.5px;
 }
 
 .footer-content__colside .content-descr a {
@@ -645,7 +659,8 @@ a {
 
 .footer-content__colside .list-icon li {
   color: #888888;
-  padding-right: 30px;
+  padding-right: 62px;
+  letter-spacing: 1.5px;
 }
 
 .footer-content__colmid {
@@ -655,19 +670,19 @@ a {
 
 .footer-content__colmid .content-title {
   color: #f7f7f7;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0.5px;
+  padding-top: 2px;
 }
 
 .footer-content__colmid .break-line {
-  height: 1px;
   width: 360px;
-  color: #f7f7f7;
   display: block;
-  border-bottom: solid;
-  margin-bottom: 30px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 18px;
 }
 
 .footer-content__colmid .content-descr {

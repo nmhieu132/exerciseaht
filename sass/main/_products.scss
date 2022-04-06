@@ -27,7 +27,7 @@ ul,li{
 }
 
 .products{
-    padding: 77px;
+    padding: 77px 77px 30px 77px;
 
     .container{
         padding-left: 0;
@@ -45,7 +45,7 @@ ul,li{
                 text-transform: uppercase;
                 line-height: 1.2;
                 text-align: left;
-                letter-spacing: 4px;
+                letter-spacing: 6px;
                 margin-bottom: 10px;
             }
 
@@ -57,7 +57,7 @@ ul,li{
                 text-transform: uppercase;
                 line-height: 1.2;
                 text-align: left;
-                letter-spacing: 2px;
+                letter-spacing: 2.4px;
                 margin-bottom: 23px;
             }
 
@@ -87,14 +87,14 @@ ul,li{
 
             .buttn{
                 position: absolute;
-                top: 69%;
-                left: 1.9%;
+                top: 67.9%;
+                left: 1.85%;
                 font-size: 12px;
                 font-family: 'Montserrat';
                 color: $color-grey;
                 text-transform: uppercase;
                 font-weight: 600;
-                line-height: 2.167;
+                line-height: 3.167;
                 outline: none;
                 border: none;
                 background-color: $color-bgbtn;
@@ -108,7 +108,7 @@ ul,li{
             }
 
             .list{
-                padding-top: 10px;
+                padding-top: 11px;
 
                 .text{
                     font-size: 14px;
@@ -116,20 +116,21 @@ ul,li{
                     color: $color-black;
                     line-height: 1.857;
                     font-weight: 600;
+                    letter-spacing: -0.24px;
 
                 }
 
                 .rating{
                     font-size: 10px;
                     color: $color-rate;
-                    padding-top: 3px;
+                    padding-top: 5px;
                     .checker{
                         color:$color-yellow;
                     }          
                 }
 
                 .cost{
-                    padding-top: 2px;
+                    padding-top: 5px;
 
                     .price{
                         text-decoration-line: line-through;
@@ -139,6 +140,7 @@ ul,li{
                     .discount{
                         color: $color-franco;
                         font-weight: 700;
+                        padding-left: 1px;
                     }
                     
                 }

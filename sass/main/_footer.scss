@@ -30,34 +30,35 @@ $color-red: rgb(255,70,40);
     &-content{
         padding-bottom: 50px;
         &__row{
-            padding-top: 62px;
+            padding-top: 58px;
         }
         &__colside{
             width: 30%;
-            margin-right: 130px;
+            margin-right: 71px;
             
             .content-title{
                 color: $color-white;
-                margin-bottom: 30px;
+                margin-bottom: 27px;
                 font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: 16px;
+                letter-spacing: 0.75px;
             }
             .break-line{
-                height: 1px;
                 width: 260px;
-                color: $color-white;
                 display:block;
-                border-bottom: solid;
-                margin-bottom: 30px;
+                border-bottom: 1px solid $color-white;
+                margin-bottom: 22px;
             }
             .content-descr{
                 color: $color-white;
                 font-size: 14px;
-                font-family: 'Open Sans';
+                font-family: 'Open Sans', sans-serif;
                 font-weight: 500;
                 color: $color-greyfooter;
-                
+                letter-spacing: -0.46px;
+                line-height: 21.5px;
+
                 a{
                     color: $color-greyfooter;
                     text-decoration: none;
@@ -85,7 +86,8 @@ $color-red: rgb(255,70,40);
                 padding-top: 44px;
                 li{
                     color: $color-greyfooter;
-                    padding-right: 30px;
+                    padding-right: 62px;
+                    letter-spacing: 1.5px;
                 }
                 
             }
@@ -96,19 +98,19 @@ $color-red: rgb(255,70,40);
             
             .content-title{
                 color: $color-white;
-                margin-bottom: 30px;
+                margin-bottom: 23px;
                 font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: 16px;
+                letter-spacing: 0.5px;
+                padding-top: 2px;
             }
 
             .break-line{
-                height: 1px;
                 width: 360px;
-                color: $color-white;
                 display:block;
-                border-bottom: solid;
-                margin-bottom: 30px;
+                border-bottom: 1px solid $color-white; 
+                margin-bottom: 18px;
             }
 
             .content-descr{

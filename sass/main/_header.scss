@@ -64,15 +64,19 @@ ul,li{
             height: 79px;
 
             &__franco{
-                display: border-box;
-                border: 2px solid black;
-                padding: 10px 0px 10px 16px;
-                font-size: 20px;
-                font-family: "Montserrat";
-                font-weight: 800;
-                text-transform: uppercase;
-                line-height: 0.75;
-                letter-spacing: 16px;
+                position: relative; 
+                .franco{
+                    font-size: 20px;
+                    font-family: "Montserrat";
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 0.75;
+                    letter-spacing: 15px;
+                    position: absolute;
+                    top: 32%;
+                    left: 8%
+                }
+                
             }
 
             &__list{

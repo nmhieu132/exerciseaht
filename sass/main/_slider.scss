@@ -35,9 +35,10 @@ a{
 
 .slider{
     background-image: url('/exerciseaht/assets/image/bg-slider.jpg');
+
     .container{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     p{
@@ -46,15 +47,18 @@ a{
             font-size: 12px;
             text-transform: uppercase;
             text-align: center;
-            letter-spacing: 5px;
-            padding-top:75px;
+            letter-spacing: 6px;
+            margin-top: 76px;
             margin-bottom: 5px;
+            padding-left: 6px;
         }
         font-family: 'Montserrat';
         font-weight: 700;
         text-transform: uppercase;
         font-size: 24px;
         color: $color-black;
+        letter-spacing: 2.5px;
+        padding-left: 4px;
     }
 
     .custom-line{
@@ -62,23 +66,25 @@ a{
         color: $color-purple;
         display:inline-block;
         border-bottom: 1px solid;
-        padding-top: 5px;
+        padding-top: 4px;
     }
 
     &-element{
         padding-top: 50px;
-        padding-bottom: 112px;
+        padding-bottom: 83px;
+        
 
         &__row{
             .slick-dots{
-                bottom :-75px;
+                
+                bottom :-48px;
+                padding-left: 5px;
             }
             .slick-dots li button:hover:before{
                 color: $color-purple;
             }
             .slick-dots li button:focus:before{
-                color: $color-purple;
-                transform: scale(1.3,1.3);
+                transform: scale(1.5,1.5);
             }
             .slick-dots li button:before{
                 font-size: 10px;
@@ -92,6 +98,7 @@ a{
         &__col{
             width: 33.33%;
             margin-right: 30px;
+            width: 360px;
         }
 
         &__detail{
@@ -103,14 +110,14 @@ a{
                 width: 60px;
                 height: 60px;
                 background-color: $color-bluwhi;
-                top: 6%;
-                left: 6%;
+                top: 5.96%;
+                left:5.7%;
 
                 ul{
                     width: 48px;
                     height: 48px;
                     border: 1px solid $color-white;
-                    margin: 6px 5px 4px 5px;
+                    margin: 5px 5px 4px 5px;
                     text-align: center;
                     color: $color-white;
                     
@@ -118,6 +125,7 @@ a{
                         &:first-child{
                             font-family: 'Montserrat';
                             font-weight: 400;
+                            margin-top: 3px;
                         }
                         font-family: 'Montserrat';
                         font-size: 14px;

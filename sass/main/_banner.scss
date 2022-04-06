@@ -45,6 +45,7 @@ $color-black: rgb(0,0,0);
                     font-size: 30px;
                     font-family: "Pacifico";
                     line-height: 1.2;
+                    letter-spacing: 0.1px;
                 }
 
                 .ad01-btn{
@@ -74,7 +75,7 @@ $color-black: rgb(0,0,0);
                 .ad02__descr1{
                     position:absolute;
                     font-size: 16px;
-                    letter-spacing: 3.5px;
+                    letter-spacing: 3.3px;
                     font-family: "Montserrat";
                     color: $color-grey;
                     top:42%;
@@ -130,9 +131,9 @@ $color-black: rgb(0,0,0);
                     position:absolute;  
                     color:white;
                     background-color: #8262b5;
-                    width: 106px;
+                    width: 108px;
                     height: 40px;
-                    left: 10.5%;
+                    left: 11.5%;
                     top: 58%;
                     text-decoration: none;
                     font-size:14px;
@@ -140,6 +141,7 @@ $color-black: rgb(0,0,0);
                     font-weight: 400;
                     text-align: center;
                     padding-top: 8px;
+                    padding-left: 5px;
                 }
             }
         }
