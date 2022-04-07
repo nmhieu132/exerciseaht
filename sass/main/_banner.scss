@@ -29,8 +29,9 @@ $color-black: rgb(0,0,0);
 
 .banner{
     padding-top: 30px;
-
     &-ad{
+        display: flex;
+        justify-content: center;
         &__horizontal{
             padding-right: 15px;
 
@@ -68,7 +69,8 @@ $color-black: rgb(0,0,0);
 
         &__vertical{
             padding-left: 15px;
-
+            display: flex;
+            flex-direction: column;
             &__ad02{
                 position: relative;
 
@@ -108,7 +110,7 @@ $color-black: rgb(0,0,0);
                     font-family: "Montserrat";
                     letter-spacing: 3.5px;
                     color: rgb(97, 97, 97);
-                    top:41%;
+                    top:41.5%;
                     left:10.5%;
                     text-transform: uppercase;
                     font-weight: 500;
@@ -120,7 +122,7 @@ $color-black: rgb(0,0,0);
                     font-size: 20px;
                     font-family: "Montserrat";
                     color: black;
-                    top: 47.5%;
+                    top: 47%;
                     left:10.5%;
                     text-transform: uppercase;
                     font-weight: 800;  
@@ -134,7 +136,7 @@ $color-black: rgb(0,0,0);
                     width: 108px;
                     height: 40px;
                     left: 11.5%;
-                    top: 58%;
+                    top: 58.5%;
                     text-decoration: none;
                     font-size:14px;
                     font-family:"Montserrat";

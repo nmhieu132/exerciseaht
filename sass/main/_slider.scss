@@ -94,17 +94,16 @@ a{
                 color: $color-purple;
             }
         }
-
-        &__col{
-            width: 33.33%;
-            margin-right: 30px;
-            width: 360px;
-        }
-
         &__detail{
             position: relative;
             background-color: $color-white;
+            width: 360px;
+            margin-right: 30px;
 
+            img{
+                width: 100%;
+            }
+            
             .block{
                 position: absolute;
                 width: 60px;

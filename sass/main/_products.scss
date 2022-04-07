@@ -27,7 +27,7 @@ ul,li{
 }
 
 .products{
-    padding: 77px 77px 30px 77px;
+    padding: 77px 77px 0px 77px;
 
     .container{
         padding-left: 0;
@@ -72,19 +72,16 @@ ul,li{
     }
     &-items{
         padding-top: 50px;
-
-        &__row{
             padding-bottom: 30px;
-        }
-
-        &__col{
-            width: 25%;
-            margin-right: 30px;
-        }
-
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
         &__detail{
             position: relative;
-
+            width: 262px;
+            
+            margin-bottom: 46px;
             .buttn{
                 position: absolute;
                 top: 67.9%;

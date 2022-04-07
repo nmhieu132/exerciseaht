@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franco</title>
-            <!-- slickjs -->
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-            <script type="text/javascript" src="slick/slick.min.js"></script>
-            <!-- slickcss -->
-            <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-            <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-            <!-- link css -->
-            <link rel="stylesheet" href="./sass/index.css">
-            <!-- <link rel="stylesheet" href="./style/style.css"> -->
-            <!-- link js -->
-            <link rel="stylesheet" href="./js/main.js">
-            <!-- link bootstrap -->
-            <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-            <!-- Font Awesome -->
-            <script src="https://kit.fontawesome.com/9ebb35ae56.js" crossorigin="anonymous"></script>
-            <!-- GG fonts -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9ebb35ae56.js" crossorigin="anonymous"></script>
+    <!-- GG fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- slickcss -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./sass/index.css">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+
+    <!-- slickjs -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </head>
+<div class="cover"></div>
+
 <body>
     <!-- header section -->
     <div class="wrapper">
         <div class="header">
-            <div class="container-fluid"></div>
+            <div class="container-fluid">
                 <div class="header-menu">
-                    <div class="header-menu__topmenu d-flex justify-content-between align-items-center">
+                    <div class="header-menu__topmenu">
                         <div class="header-menu__topmenu__greets">
                             <i class="fa-regular fa-bookmark"></i>
                             Welcome to Franco-an e-Commerce PSD Template!
                         </div>
-                        <ul class="header-menu__topmenu__list d-flex align-item-center">
+                        <ul class="header-menu__topmenu__list">
                             <li class="list__items"><i class="fa-solid fa-gear"></i> Shop Setting</li>
                             <li class="list__items"><i class="fa-solid fa-lock"></i> Member Login</li>
                         </ul>
                     </div>
-                    <div class="header-menu__mainmenu d-flex justify-content-between align-items-center">
+                    <div class="header-menu__mainmenu ">
                         <div class="header-menu__mainmenu__franco">
                             <img src="./assets/image/logoborder.jpg" alt="">
                             <div class="franco">franco</div>
                         </div>
-                        <ul class="header-menu__mainmenu__list d-flex align-item-center">
-                            <li class="list__items" >home</li>
+                        <div class="responsive-bars"><i class="fa-solid fa-bars"></i></div>
+                        <ul class="header-menu__mainmenu__list ">
+                            <li class="list__items">home</li>
                             <li class="list__items">women</li>
                             <li class="list__items">men</li>
                             <li class="list__items">about us</li>
@@ -58,9 +63,10 @@
                             <li class="list__items">contact </li>
                             <li class="list__items"><i class="fa-solid fa-magnifying-glass"></i></li>
                         </ul>
-                        <ul class="header-menu__mainmenu__cart d-flex align-items-center">
-                            <li class="cart__list"><i class="fa-regular fa-heart"></i></li>  
-                            <li class="cart__list"><i class="fa-solid fa-cart-shopping"></i></li>      
+                        <ul class="header-menu__mainmenu__cart ">
+
+                            <li class="cart__list"><i class="fa-regular fa-heart"></i></li>
+                            <li class="cart__list"><i class="fa-solid fa-cart-shopping"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -68,16 +74,16 @@
         </div>
         <!-- banner section -->
         <div class="banner">
-            <div class="container-fluid">
-                <div class="banner-ad d-flex justify-content-center">
+            <div class="container">
+                <div class="banner-ad ">
                     <div class="banner-ad__horizontal">
                         <div class="banner-ad__horizontal__ad01">
                             <img src="./assets/image/ad01.jpg" class="ad_01-img" alt="two high-end materials">
                             <p class="ad01__descr">Two High-end Materials</p>
                             <a href="#" class="ad01-btn">Shop Now</a>
-                        </div>  
+                        </div>
                     </div>
-                    <div class="banner-ad__vertical d-flex flex-column">
+                    <div class="banner-ad__vertical">
                         <div class="banner-ad__vertical__ad02">
                             <img src="./assets/image/ad02.jpg" alt="small thing make different">
                             <p class="ad02__descr1">Small thing</p>
@@ -104,435 +110,444 @@
                     </div>
                 </div>
                 <div class="products-items">
-                    <div class="products-items__row d-flex ">
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/watch.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Suspendisse id volutpat</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="price">$99.00</span>
-                                        <span class="discount">$84.00</span>
-                                    </li>
+                    <div class="products-items__detail">
+                        <img src="./assets/image/watch.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Suspendisse id volutpat</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/girlbag.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Lorem ipsum dolor</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/blackbag.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Proin sed nulla mi</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/trenchcoach.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Aenean placerat</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/menbag.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Suspendisse id volutpat</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/sandals.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Lorem ipsum dolor</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/girlbag2.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text">Proin sed nulla mi</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="products-items__detail">
+                        <img src="./assets/image/blackbag2.jpg" />
+                        <button class="buttn" type="button">add to cart</button>
+                        <ul class="list d-flex flex-column">
+                            <li class="text"> Aenean placerat </li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- slider section  -->
+    <div class="slider">
+        <div class="container">
+            <div class="slider-title d-flex flex-column align-items-center justify-content-center">
+                <p>Latest</p>
+                <p>News & Events</p>
+                <span class="custom-line"></span>
+            </div>
+            <div class="slider-element">
+                <div class="slider-element__row d-flex">
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/girlbag.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Lorem ipsum dolor</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="price">$99.00</span>
-                                        <span class="discount">$84.00</span>
-                                    </li>
-                                </ul>
+                            <div class="detail-title"> In commodo dolor vitae</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react d-flex">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
                             </div>
                         </div>
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/blackbag.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Proin sed nulla mi</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="discount">$84.00</span>
-                                    </li>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
                                 </ul>
                             </div>
+                            <div class="detail-title">Vivamus non dignissim elt</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
                         </div>
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/trenchcoach.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Aenean placerat</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="price">$99.00</span>
-                                        <span class="discount">$84.00</span>
-                                    </li>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
                                 </ul>
+                            </div>
+                            <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
+                        </div>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                            <div class="detail-title"> In commodo dolor vitae</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react d-flex">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
+                        </div>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                            <div class="detail-title">Vivamus non dignissim elt</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
+                        </div>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                            <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
+                        </div>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                            <div class="detail-title"> In commodo dolor vitae</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react d-flex">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
+                        </div>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                            <div class="detail-title">Vivamus non dignissim elt</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                            </div>
+                        </div>
+                        <div class="slider-element__detail">
+                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
+                            <div class="block">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                            <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
+                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                            <div class="client-react">
+                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
                             </div>
                         </div>
                     </div>
-                    <div class="products-items__row d-flex ">
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/menbag.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Suspendisse id volutpat</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="price">$99.00</span>
-                                        <span class="discount">$84.00</span>
-                                    </li>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content__row d-flex ">
+                    <div class="footer-content__colleft">
+                        <div class="content-title">About Franco</div>
+                        <span class="break-line"></span>
+                        <div class="content-descr">Aliquam tempor sagittis neque, vel aliquam risus consectetur vel.
+                            Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam
+                            at ipsum</div>
+                        <ul class="list-icon d-flex">
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><i class="fa-brands fa-behance"></i></li>
+                            <li><i class="fa-solid fa-basketball"></i></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content__colmid">
+                        <div class="content-title">Navigation</div>
+                        <span class="break-line"></span>
+                        <div class="content-descr">
+                            <div class="content-descr__row d-flex justify-content-start">
+                                <ul class="nav-li">
+                                    <li>Home</li>
+                                    <li>About Us</li>
+                                    <li>Our Blog</li>
+                                    <li>Women</li>
+                                    <li>Men</li>
+                                    <li>Contact Us</li>
                                 </ul>
+                                <ul class="nav-li">
+                                    <li>FAQs</li>
+                                    <li>Featured Brands</li>
+                                    <li>Gift Vouchers</li>
+                                    <li>Affiliates</li>
+                                    <li>Specials Gift</li>
+                                    <li>Terms & Conditions</li>
+                                </ul>
+
                             </div>
                         </div>
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/sandals.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Lorem ipsum dolor</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="price">$99.00</span>
-                                        <span class="discount">$84.00</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/girlbag2.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text">Proin sed nulla mi</li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="discount">$84.00</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="products-items__col">
-                            <div class="products-items__detail">
-                                <img src="./assets/image/blackbag2.jpg"/>
-                                <button class="buttn" type="button">add to cart</button>
-                                <ul class="list d-flex flex-column">
-                                    <li class="text"> Aenean placerat </li>
-                                    <li class="rating">
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star checker"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </li>
-                                    <li class="cost">
-                                        <span class="price">$99.00</span>
-                                        <span class="discount">$84.00</span>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="footer-content__colright">
+                        <div class="content-title">Shop location</div>
+                        <span class="break-line"></span>
+                        <div class="content-descr">
+                            <table>
+                                <tr>
+                                    <td><i class="fa-regular fa-map"></i></td>
+                                    <td><a href=""> 500 Hennessy Road <br> Causeway Bay, Hong Kong</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-solid fa-phone"></i></td>
+                                    <td><a href="tel:+1 23456789">+1 23456789</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-regular fa-envelope"></i></td>
+                                    <td><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- slider section  -->
-        <div class="slider">
+        <hr>
+        <div class="footer-copyright">
             <div class="container">
-                <div class="slider-title d-flex flex-column align-items-center justify-content-center">
-                    <p>Latest</p>
-                    <p>News & Events</p>
-                    <span class="custom-line"></span>
-                </div>
-                <div class="slider-element">
-                    <div class="slider-element__row d-flex">
-                        <div class="slider-element__col">
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title"> In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react d-flex">
-                                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col">
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title">Vivamus non dignissim elt</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react">
-                                    <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                    <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col" >
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react">
-                                    <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                    <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col">
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title"> In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react d-flex">
-                                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col">
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title">In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react">
-                                    <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                    <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col" >
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title">In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react">
-                                    <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                    <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col">
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title"> In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react d-flex">
-                                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col">
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title">In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react">
-                                    <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                    <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-element__col" >
-                            <div class="slider-element__detail">
-                                <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
-                                <div class="block">
-                                    <ul>
-                                        <li>Jan</li>
-                                        <li>23</li>
-                                    </ul>
-                                </div>
-                                <div class="detail-title">In commodo dolor vitae</div>
-                                <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                                <div class="client-react">
-                                    <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                    <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="footer-copyright__content d-flex justify-content-between">
+                    <div class="copyright-aht">
+                        <i class="fa-regular fa-copyright"></i> Copyright 2015 & Made with <i
+                            class="fa-solid fa-heart"></i> by Arrowhitech
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-content__row d-flex ">
-                        <div class="footer-content__colside">
-                            <div class="content-title">About Franco</div>
-                            <span class="break-line"></span>
-                            <div class="content-descr">Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum</div>
-                            <ul class="list-icon d-flex">
-                                <li><i class="fa-brands fa-twitter"></i></li>
-                                <li><i class="fa-brands fa-linkedin-in"></i></li>
-                                <li><i class="fa-brands fa-behance"></i></li>
-                                <li><i class="fa-solid fa-basketball"></i></li>
-                            </ul>
-                        </div>
-                        <div class="footer-content__colmid">
-                            <div class="content-title">Navigation</div>
-                            <span class="break-line"></span>
-                            <div class="content-descr">
-                                <div class="content-descr__row d-flex justify-content-start">
-                                    <div class="content-descr__col">
-                                        <ul>
-                                            <li>Home</li>
-                                            <li>About Us</li>
-                                            <li>Our Blog</li>
-                                            <li>Women</li>
-                                            <li>Men</li>
-                                            <li>Contact Us</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content-descr__col">
-                                        <ul>
-                                            <li>FAQs</li>
-                                            <li>Featured Brands</li>
-                                            <li>Gift Vouchers</li>
-                                            <li>Affiliates</li>
-                                            <li>Specials Gift</li>
-                                            <li>Terms & Conditions</li>
-                                        </ul>
-                                    </div>
-                                </div>        
-                            </div>
-                        </div>
-                        <div class="footer-content__colside">
-                            <div class="content-title">Shop location</div>
-                            <span class="break-line"></span>
-                            <div class="content-descr">
-                                    <table>
-                                        <tr>
-                                            <td><i class="fa-regular fa-map"></i></td>
-                                            <td><a href=""> 500 Hennessy Road <br> Causeway Bay, Hong Kong</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa-solid fa-phone"></i></td>
-                                            <td><a href="tel:+1 23456789">+1 23456789</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa-regular fa-envelope"></i></td>
-                                            <td><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></td>
-                                        </tr>
-                                    </table>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="footer-copyright__content d-flex justify-content-between">
-                        <div class="copyright-aht">
-                            <i class="fa-regular fa-copyright"></i> Copyright 2015 & Made with <i class="fa-solid fa-heart"></i> by Arrowhitech
-                        </div>
-                        <div class="list-icons">
-                            <i class="fa-brands fa-cc-visa"></i>
-                            <i class="fa-brands fa-cc-paypal"></i>
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                            <i class="fa-brands fa-cc-discover"></i>
-                            <i class="fa-brands fa-cc-amex"></i>
-                        </div>
+                    <div class="list-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-discover"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    </div>
+
     <script>
         $('.slider-element__row').slick({
             dots: true,
             infinite: false,
             prevArrow: false,
-            nextArrow: false,   
+            nextArrow: false,
             speed: 1200,
             slidesToShow: 3,
             slidesToScroll: 3,
-            variableWidth: true
+            variableWidth: true,
+            responsive: [
+                {
+                breakpoint: 1024,
+                setting: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                }
+                },
+                {
+                breakpoint: 768,
+                setting:{
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    infinite: true,
+                    dots: true,
+                }
+                }
+            ]
         });
     </script>
+    <!-- link js -->
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
