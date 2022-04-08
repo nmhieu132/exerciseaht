@@ -259,10 +259,19 @@ $color-lightgrey: rgb(199,198,198);
         .container{
             padding:0 15px
         }
+        .footer-content__colleft{
+            width: 100%;
+        }
+        .footer-content__colmid{
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .footer-content__colright{
+            width: 100%;
+        }
     }
-    .footer-content__colmid{
-        margin-bottom: 30px;
-    }
+    
+    
 }
 
 @media screen and (max-width: 426px) {

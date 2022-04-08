@@ -35,6 +35,9 @@ ul,li{
     }
 
     &-sell{
+        display:flex;
+        justify-content: start;
+        align-items: center;
         &__descr{
 
             .franco{
@@ -106,7 +109,8 @@ ul,li{
 
             .list{
                 padding-top: 11px;
-
+                display: flex;
+                flex-direction: column;
                 .text{
                     font-size: 14px;
                     font-family: 'Montserrat';
