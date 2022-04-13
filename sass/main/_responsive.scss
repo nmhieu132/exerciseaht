@@ -19,6 +19,7 @@ $color-lightgrey: rgb(199, 198, 198);
 
   .responsive-bars {
     display: none;
+    font-size: 24px;
   }
   // banner section
   .banner-ad {
@@ -26,18 +27,19 @@ $color-lightgrey: rgb(199, 198, 198);
     flex-direction: column;
     justify-content: center;
   }
+
   .banner-ad__left {
     display: flex;
     justify-content: center;
     padding-right: 0;
     width: 100%;
-    &__ad01 {
-      width: 100%;
-    }
+
     img {
       width: 100%;
     }
+
   }
+
   .banner-ad__right {
     display: flex;
     flex-direction: row;
@@ -62,7 +64,7 @@ $color-lightgrey: rgb(199, 198, 198);
       .descr__bot {
         top: 47%;
       }
-      .banner-ad__right__btnx {
+      .banner-ad__right__btn {
         left: 11%;
         top: 59.5%;
       }
@@ -71,19 +73,18 @@ $color-lightgrey: rgb(199, 198, 198);
   // products section
   .products {
     padding: 77px 0 30px 0px;
-    .container {
-      padding: 0 15px 0 15px;
-    }
+
     .products-items__detail{
-        width: calc((( 100% + 30px ) / 3 ) - 30px);
-        margin: 0 30px 46px 0;
-        &:nth-child(3n){
+        width: calc((( 100% + 20px ) / 4 ) - 20px);
+        margin: 0 20px 46px 0;
+        &:nth-child(4n){
             margin-right: 0;
         }
     }
+
   }
 
-  .slider-element__detail {
+  .slider .row-detail {
     width: 300px;
   }
   .footer-content__row {
@@ -100,25 +101,28 @@ $color-lightgrey: rgb(199, 198, 198);
     display: flex;
     flex-direction: column;
     z-index: 999;
-    top: 15%;
     position: fixed;
-    left: 70.5%;
     background-color: $color-lightgrey;
-    width: 30vh;
+    width: 35wh;
     height: 100vh;
-    transform: translateX(180%);
+    display: none;
     transition: 0.5s;
+    position: absolute;
   }
   .list__items {
     padding: 16px 16px;
   }
   .active {
-    transform: translateX(0);
+    display: block;
     transition: 0.5s;
     z-index: 1000;
+    top: 47px;
+    right: 0;
+    position: absolute;
   }
   .header-menu__mainmenu .responsive-bars {
     display: block;
+    position: relative;
   }
   .banner-ad__left {
     margin-right: 0;
@@ -127,6 +131,15 @@ $color-lightgrey: rgb(199, 198, 198);
     display: flex;
     flex-direction: row;
   }
+
+  .slider{
+      .row{
+          .row-detail{
+              width: 745px;
+          }
+      }
+  }
+
   .footer-content__colleft {
     margin-right: 220px;
     .break-line {
@@ -154,55 +167,71 @@ $color-lightgrey: rgb(199, 198, 198);
   .header-menu__topmenu {
     font-size: 10px;
   }
-
-  .header-menu__mainmenu__list {
-    left: 64%;
-    top: 15%;
-  }
-  .banner-ad__horizontal__ad01 {
-    .ad01__descr {
-      font-size: 23px;
+  .banner-ad__left {
+    .banner-ad__left__detail{
+        right: 40px;
     }
-    .ad01-btn {
-      width: 103px;
+    .banner-ad__left__descr {
+      font-size: 25px;
+      letter-spacing: 0.5px;
     }
-  }
-  .banner-ad__vertical__ad02 {
-    .ad02__descr1 {
-      font-size: 15px;
-    }
-    .ad02__descr2 {
-      font-size: 17px;
-      top: 50%;
+    .banner-ad__left__btn {
+      width: 82px;
+      height: 36px;
+      font-size: 12px;
+      margin-left: 194px;
     }
   }
-  .banner-ad__vertical__ad03 {
-    .ad03__descr1 {
-      font-size: 15px;
-    }
-    .ad03__descr2 {
-      font-size: 17px;
-      top: 48%;
-    }
-    .ad03-btn {
-      left: 10.5%;
-      width: 102px;
-      height: 38px;
-    }
+  .banner-ad__right{
+      display: flex;
+      flex-direction: column;
+      img{
+          height: 100%;
+      }
+      .banner-ad__right__top {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+        .descr__top {
+          font-size: 15px;
+        }
+        .descr__bot {
+          font-size: 17px;
+        }
+      }
+      .banner-ad__right__bot {
+        width: 100%;
+        height: 100%;
+        &__detail{
+            left: 57px;
+        }
+        .descr__top {
+          font-size: 15px;
+        }
+        .descr__bot {
+          font-size: 17px;
+        }
+        .banner-ad__right__btn {
+            width: 82px;
+            height: 36px;
+            font-size: 12px;
+        }
+      }
   }
-
-  .products-items {
-    justify-content: center;
-  }
-
-  .products-items__detail {
-    width: 264px;
-
-    img {
-      width: 100%;
+  
+  .products{
+    .products-items__detail {
+        width: calc((( 100% + 20px ) / 2 ) - 20px);
+        margin: 0 20px 46px 0;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        img {
+        width: 100%;
+        }
     }
-  }
-  .slider-element__detail {
+    }   
+  .slider .row-detail {
     width: 530px;
   }
   .footer-content__colleft {
@@ -237,36 +266,30 @@ $color-lightgrey: rgb(199, 198, 198);
     display: none;
   }
   .header-menu__mainmenu__list {
-    left: 55%;
-    top: 9.5%;
+    top: 80px;
   }
-  .banner-ad__horizontal__ad01 {
-    .ad01-btn {
+  .banner-ad__left {
+    .banner-ad__left__btn {
       width: 100px;
       height: 37px;
       font-size: 14px;
-      left: 70.3%;
     }
-    .ad01__descr {
+    .banner-ad__left__descr {
       font-size: 22px;
     }
   }
-  .banner-ad__vertical__ad03 {
-    .ad03__descr1 {
-      top: 38.5%;
-    }
-    .ad03__descr2 {
-      top: 46%;
-    }
-    .ad03-btn {
-      left: 11%;
+  .banner-ad__right__bot {
+    .banner-ad__right__btn {
       width: 100px;
       height: 36px;
     }
   }
-  .products-items__detail {
-    width: 264px;
-  }
+  .products{
+    .products-items__detail {
+        width: 100%;
+        margin-right: 0;
+    }
+    }
   .footer {
     .container {
       padding: 0 15px;
@@ -293,104 +316,106 @@ $color-lightgrey: rgb(199, 198, 198);
     margin-right: 30px;
   }
   .header-menu__mainmenu__list {
-    left: 38%;
-    top: 9.5%;
+    right: 0;
+    top: 22.5%;
     .list__items {
       padding: 10px 10px;
     }
   }
-  .banner-ad__horizontal__ad01 {
-    .ad01-btn {
-      width: 100px;
+  .banner-ad__left {
+    .banner-ad__left__btn {
+      width: 80px;
       height: 35px;
-      font-size: 14px;
-      left: 63.3%;
+      font-size: 12px;
+      margin-left: 100px;
     }
-    .ad01__descr {
+    .banner-ad__left__descr {
       font-size: 16px;
-      left: 43.9%;
     }
   }
-  .banner-ad__vertical__ad02 {
-    .ad02__descr1 {
-      top: 44%;
+  .banner-ad__right__top {
+    &__detail{
+        top: 35.5%;
+        left: 18px;
+    }
+    .descr__top {
       font-size: 12px;
     }
-    .ad02__descr2 {
-      top: 52%;
-      font-size: 15px;
+    .descr__bot {
+      font-size: 13px;
     }
   }
-  .banner-ad__vertical__ad03 {
-    .ad03__descr1 {
-      top: 44%;
+  .banner-ad__right__bot {
+    .banner-ad__right__bot__detail{
+        top: 36.2%;
+        left: 18px;
+    }
+    .descr__top {
       font-size: 14px;
     }
-    .ad03-btn {
-      left: 11%;
-      width: 90px;
+    .banner-ad__right__btn {
+      width: 70px;
       height: 35px;
     }
-    .ad03__descr2 {
-      top: 50%;
+    .descr__bot {
       font-size: 14px;
+      margin-bottom: 10px;
     }
   }
   .products-items {
     justify-content: center;
-  }
-  .slider-element__detail {
-    width: 370px;
   }
 }
 
 @media screen and (max-width: 375px) {
   // header section
   .header-menu__mainmenu__list {
-    left: 44%;
-    top: 9%;
+    top: 16%;
+    right: 0;
     width: 26vh;
     height: 100vh;
   }
 
-  .banner-ad__horizontal__ad01 {
-    .ad01__descr {
-      font-size: 15px;
-      left: 41.3%;
+  .banner-ad__left {
+    .banner-ad__left__detail{
+        right: 24px;
     }
-    .ad01-btn {
+    .banner-ad__left__descr {
+      font-size: 15px;
+    }
+    .banner-ad__left__btn {
       width: 83px;
       height: 31px;
       padding-top: 6px;
       font-size: 13px;
-      left: 64.3%;
+      margin-left: 88px;
     }
   }
-  .banner-ad__vertical img {
+  .banner-ad__right img {
     height: 160px;
   }
-  .banner-ad__vertical__ad02 {
-    .ad02__descr1 {
-      top: 45%;
+  .banner-ad__right__top {
+    .descr__top {
       font-size: 11px;
     }
-    .ad02__descr2 {
-      top: 52%;
+    .descr__bot {
       font-size: 13px;
     }
   }
-  .banner-ad__vertical__ad03 {
-    .ad03__descr1 {
-      top: 37%;
+  .banner-ad__right__bot {
+    .banner-ad__right__bot__detail{
+        top: 36.2%;
+        left: 18px;
+    }
+    .descr__top {
       font-size: 12px;
     }
-    .ad03__descr2 {
-      top: 47%;
+    .descr__bot { 
       font-size: 12px;
+      margin-bottom: 10px;
     }
-    .ad03-btn {
-      left: 11%;
-      width: 84px;
+    .banner-ad__right__btn {
+      width: 70px;
       height: 30px;
       font-size: 12px;
       padding-top: 6px;

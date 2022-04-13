@@ -62,15 +62,6 @@ a:hover{
           padding-right: 15px;
           font-size: 14px;
         }
-
-        tr {
-          line-height: 2.4;
-          &:first-child {
-            i {
-              padding-bottom: 40px;
-            }
-          }
-        }
       }
       .list-icon {
         display: flex;
@@ -107,7 +98,11 @@ a:hover{
         letter-spacing: -0.46px;
         line-height: 21.5px;
         padding-right: 40px;
-
+        i {
+          padding-right: 15px;
+          font-size: 14px;
+          line-height: 2.35;
+        }
         a {
           color: $color-greyfooter;
           text-decoration: none;
@@ -115,18 +110,9 @@ a:hover{
           font-weight: 500;
           width: 205px;
         }
-        i {
-          padding-right: 15px;
-          font-size: 14px;
-        }
-
-        tr {
-          line-height: 2.3;
-          &:first-child {
-            i {
-              padding-bottom: 40px;
-            }
-          }
+        li{
+          display: flex;
+          line-height: 2.35;
         }
       }
       .list-icon {

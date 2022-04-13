@@ -43,7 +43,7 @@ a{
     }
 
     .custom-line{
-        width: 50px;
+        width: 52px;
         color: $color-purple;
         display:inline-block;
         border-bottom: 1px solid;
@@ -51,12 +51,12 @@ a{
     }
     .row{
         margin: 50px 0 0 ;
-        padding-bottom: 112px;
+        padding-bottom: 110px;
         .slick-slide {
-            margin : 0 19px;
+            margin : 3px 18px;
         }
         .slick-list {
-            margin : 0 -19px;
+            margin : 0 -18px;
         }
         .slick-dots{
             bottom :63px;
@@ -101,10 +101,7 @@ a{
                 left:20px;
 
                 ul{
-                    width: 48px;
-                    height: 48px;
-                    border: 1px solid $color-white;
-                    margin: 5px 5px 4px 5px;
+                    margin: 10px 5px 4px 5px;
                     text-align: center;
                     color: $color-white;
                     
@@ -118,6 +115,15 @@ a{
                         font-weight: 700;
                     }
                 }
+            }
+            .day::before{
+                content: "";
+                position: absolute;
+                width: 48px;
+                height: 48px;
+                border: 1px solid $color-white;
+                top: 10%;
+                left: 10%;
             }
 
             .detail-title{

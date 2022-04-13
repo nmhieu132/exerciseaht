@@ -44,8 +44,8 @@
                             Welcome to Franco-an e-Commerce PSD Template!
                         </div>
                         <ul class="header-menu__topmenu__list">
-                            <li class="list__items"><i class="fa-solid fa-gear"></i> Shop Setting</li>
-                            <li class="list__items"><i class="fa-solid fa-lock"></i> Member Login</li>
+                            <li class="list__items"><a href=""><i class="fa-solid fa-gear"></i> Shop Setting</a></li>
+                            <li class="list__items"><a href=""><i class="fa-solid fa-lock"></i> Member Login</a></li>
                         </ul>
                     </div>
                     <div class="header-menu__mainmenu ">
@@ -53,21 +53,21 @@
                             <img src="./assets/image/logoborder.jpg" alt="">
                             <div class="franco">franco</div>
                         </div>
-                        <div class="responsive-bars"><i class="fa-solid fa-bars"></i></div>
+                        <!--     -->
                         <ul class="header-menu__mainmenu__list ">
-                            <li><a href="#" class="home">home</a></li>
-                            <li><a href="#" class="list__items">women</a></li>
-                            <li><a href="#" class="list__items">men</a></li>
-                            <li><a href="#" class="list__items">about us</a></li>
-                            <li><a href="#" class="list__items">blog</a></li>
-                            <li><a href="#" class="list__items">collections</a></li>
-                            <li><a href="#" class="list__items">contact</a></li>
-                            <li><a href="#" class="list__items"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li class="list__items"><a href="#" >home</a></li>
+                            <li class="list__items"><a href="#">women</a></li>
+                            <li class="list__items"><a href="#">men</a></li>
+                            <li class="list__items"><a href="#">about us</a></li>
+                            <li class="list__items"><a href="#">blog</a></li>
+                            <li class="list__items"><a href="#">collections</a></li>
+                            <li class="list__items"><a href="#">contact</a></li>
+                            <li class="list__items"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         </ul>
                         <ul class="header-menu__mainmenu__cart ">
-
-                            <li class="cart__list"><i class="pe-7s-like"></i></li>
-                            <li class="cart__list"><i class="pe-7s-cart"></i></li>
+                            <li class="responsive-bars"><i class="fa-solid fa-bars"></i></li>
+                            <li class="cart__list"><a href=""><i class="pe-7s-like"></i></a></li>
+                            <li class="cart__list"><a href=""><i class="pe-7s-cart"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -462,20 +462,24 @@
                         <div class="content-title">Shop location</div>
                         <span class="break-line"></span>
                         <div class="content-descr">
-                            <table>
-                                <tr>
+                            <ul>
+                                <li><i class="fa-regular fa-map"></i><a href="">500 Hennessy Road Causeway Bay, Hong Kong</a></li>
+                                <li><i class="fa-solid fa-phone"></i><a href="tel:+1 23456789">+1 23456789</a></li>
+                                <li><i class="fa-regular fa-envelope"></i><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></i></li>
+                            </ul>
+                                <!-- <tr>
                                     <td><i class="fa-regular fa-map"></i></td>
                                     <td><a href=""> 500 Hennessy Road <br> Causeway Bay, Hong Kong</a></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fa-solid fa-phone"></i></td>
-                                    <td><a href="tel:+1 23456789">+1 23456789</a></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fa-regular fa-envelope"></i></td>
-                                    <td><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
-                            </table>
+                            </table> -->
                         </div>
                     </div>
                 </div>
@@ -515,7 +519,7 @@
             responsive: [
                 {
                 breakpoint: 1170,
-                setting: {
+                settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
@@ -523,23 +527,15 @@
                 }
                 },
                 {
-                breakpoint: 1024,
-                setting: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true,
+                    breakpoint: 768,
+                    settings: {
+                        slidesToScroll: 1,
+                        slidesToShow: 1,
+                        infinite: true,
+                        dots: true,
+                    }
                 }
-                },
-                {
-                breakpoint: 768,
-                setting:{
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    infinite: true,
-                    dots: true,
-                }
-                }
+              
             ]
         });
     </script>
