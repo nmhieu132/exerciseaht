@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9ebb35ae56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <!-- GG fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,19 +55,19 @@
                         </div>
                         <div class="responsive-bars"><i class="fa-solid fa-bars"></i></div>
                         <ul class="header-menu__mainmenu__list ">
-                            <li class="list__items">home</li>
-                            <li class="list__items">women</li>
-                            <li class="list__items">men</li>
-                            <li class="list__items">about us</li>
-                            <li class="list__items">blog</li>
-                            <li class="list__items">collections</li>
-                            <li class="list__items">contact </li>
-                            <li class="list__items"><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li><a href="#" class="home">home</a></li>
+                            <li><a href="#" class="list__items">women</a></li>
+                            <li><a href="#" class="list__items">men</a></li>
+                            <li><a href="#" class="list__items">about us</a></li>
+                            <li><a href="#" class="list__items">blog</a></li>
+                            <li><a href="#" class="list__items">collections</a></li>
+                            <li><a href="#" class="list__items">contact</a></li>
+                            <li><a href="#" class="list__items"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         </ul>
                         <ul class="header-menu__mainmenu__cart ">
 
-                            <li class="cart__list"><i class="fa-regular fa-heart"></i></li>
-                            <li class="cart__list"><i class="fa-solid fa-cart-shopping"></i></li>
+                            <li class="cart__list"><i class="pe-7s-like"></i></li>
+                            <li class="cart__list"><i class="pe-7s-cart"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -75,25 +76,29 @@
         <!-- banner section -->
         <div class="banner">
             <div class="container">
-                <div class="banner-ad ">
-                    <div class="banner-ad__horizontal">
-                        <div class="banner-ad__horizontal__ad01">
-                            <img src="./assets/image/ad01.jpg" class="ad_01-img" alt="two high-end materials">
-                            <p class="ad01__descr">Two High-end Materials</p>
-                            <a href="#" class="ad01-btn">Shop Now</a>
+                <div class="banner-ad">
+                    <div class="banner-ad__left">
+                        <img src="./assets/image/ad01.jpg" alt="ad-left">
+                        <div class="banner-ad__left__detail">
+                            <p class="banner-ad__left__descr">Two High-end Materials</p>
+                            <a href="#" class="banner-ad__left__btn">Shop Now</a>
                         </div>
                     </div>
-                    <div class="banner-ad__vertical">
-                        <div class="banner-ad__vertical__ad02">
-                            <img src="./assets/image/ad02.jpg" alt="small thing make different">
-                            <p class="ad02__descr1">Small thing</p>
-                            <p class="ad02__descr2">make different</p>
+                    <div class="banner-ad__right">
+                        <div class="banner-ad__right__top">
+                            <img src="./assets/image/ad02.jpg" alt="ad-right-top">
+                            <div class="banner-ad__right__top__detail">
+                                    <p class="descr__top">Small Thing</p>
+                                    <p class="descr__bot">Make different</p>
+                            </div>
                         </div>
-                        <div class="banner-ad__vertical__ad03">
-                            <img src="./assets/image/ad03.jpg" alt="folio backpack">
-                            <p class="ad03__descr1">Folio</p>
-                            <p class="ad03__descr2">Backpack</p>
-                            <a href="#" class="ad03-btn">Shop Now</a>
+                        <div class="banner-ad__right__bot">
+                            <img src="./assets/image/ad03.jpg" alt="ad-right-bot">
+                            <div class="banner-ad__right__bot__detail">
+                                <p class="descr__top">Folio</p>
+                                <p class="descr__bot">Backpack</p>
+                                <a href="#" class="banner-ad__right__btn">Shop Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,17 +107,17 @@
         <!-- product section -->
         <div class="products">
             <div class="container">
-                <div class="products-sell">
-                    <div class="products-sell__descr">
-                        <p class="franco">franco</p>
-                        <p class="feature__item">featured items</p>
-                        <span class="custom__line"></span>
-                    </div>
+                <div class="products__descr">
+                    <p class="franco">franco</p>
+                    <p class="feature__item">featured items</p>
+                    <span class="custom__line"></span>
                 </div>
                 <div class="products-items">
                     <div class="products-items__detail">
-                        <img src="./assets/image/watch.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/watch.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
                         <ul class="list">
                             <li class="text">Suspendisse id volutpat</li>
                             <li class="rating">
@@ -128,70 +133,11 @@
                             </li>
                         </ul>
                     </div>
-
-
                     <div class="products-items__detail">
-                        <img src="./assets/image/girlbag.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
-                        <ul class="list">
-                            <li class="text">Lorem ipsum dolor</li>
-                            <li class="rating">
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </li>
-                            <li class="cost">
-                                <span class="price">$99.00</span>
-                                <span class="discount">$84.00</span>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="products-items__detail">
-                        <img src="./assets/image/blackbag.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
-                        <ul class="list">
-                            <li class="text">Proin sed nulla mi</li>
-                            <li class="rating">
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </li>
-                            <li class="cost">
-                                <span class="discount">$84.00</span>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="products-items__detail">
-                        <img src="./assets/image/trenchcoach.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
-                        <ul class="list">
-                            <li class="text">Aenean placerat</li>
-                            <li class="rating">
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                                <i class="fa-regular fa-star checker"></i>
-                            </li>
-                            <li class="cost">
-                                <span class="price">$99.00</span>
-                                <span class="discount">$84.00</span>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="products-items__detail">
-                        <img src="./assets/image/menbag.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/girlbag.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
                         <ul class="list">
                             <li class="text">Suspendisse id volutpat</li>
                             <li class="rating">
@@ -207,13 +153,13 @@
                             </li>
                         </ul>
                     </div>
-
-
                     <div class="products-items__detail">
-                        <img src="./assets/image/sandals.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/blackbag.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
                         <ul class="list">
-                            <li class="text">Lorem ipsum dolor</li>
+                            <li class="text">Suspendisse id volutpat</li>
                             <li class="rating">
                                 <i class="fa-regular fa-star checker"></i>
                                 <i class="fa-regular fa-star checker"></i>
@@ -227,13 +173,13 @@
                             </li>
                         </ul>
                     </div>
-
-
                     <div class="products-items__detail">
-                        <img src="./assets/image/girlbag2.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/trenchcoach.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
                         <ul class="list">
-                            <li class="text">Proin sed nulla mi</li>
+                            <li class="text">Suspendisse id volutpat</li>
                             <li class="rating">
                                 <i class="fa-regular fa-star checker"></i>
                                 <i class="fa-regular fa-star checker"></i>
@@ -242,17 +188,78 @@
                                 <i class="fa-regular fa-star"></i>
                             </li>
                             <li class="cost">
+                                <span class="price">$99.00</span>
                                 <span class="discount">$84.00</span>
                             </li>
                         </ul>
                     </div>
-
-
                     <div class="products-items__detail">
-                        <img src="./assets/image/blackbag2.jpg" />
-                        <button class="buttn" type="button">add to cart</button>
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/menbag.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
                         <ul class="list">
-                            <li class="text"> Aenean placerat </li>
+                            <li class="text">Suspendisse id volutpat</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products-items__detail">
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/sandals.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
+                        <ul class="list">
+                            <li class="text">Suspendisse id volutpat</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products-items__detail">
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/girlbag2.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
+                        <ul class="list">
+                            <li class="text">Suspendisse id volutpat</li>
+                            <li class="rating">
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star checker"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </li>
+                            <li class="cost">
+                                <span class="price">$99.00</span>
+                                <span class="discount">$84.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products-items__detail">
+                        <div class="products-items__detail__image">
+                            <img src="./assets/image/blackbag2.jpg" />
+                            <button class="buttn" type="button">add to cart</button>
+                        </div>
+                        <ul class="list">
+                            <li class="text">Suspendisse id volutpat</li>
                             <li class="rating">
                                 <i class="fa-regular fa-star checker"></i>
                                 <i class="fa-regular fa-star checker"></i>
@@ -268,7 +275,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
+
     <!-- slider section  -->
     <div class="slider">
         <div class="container">
@@ -277,155 +285,135 @@
                 <p>News & Events</p>
                 <span class="custom-line"></span>
             </div>
-            <div class="slider-element">
-                <div class="slider-element__row">
-                        <div class="slider-element__detail">
+            <div class="row">
+                    <div class="row-detail">
+                        <div class="row-detail__image">
                             <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
-                            <div class="block">
+                            <div class="day">
                                 <ul>
                                     <li>Jan</li>
                                     <li>23</li>
                                 </ul>
-                            </div>
-                            <div class="detail-title"> In commodo dolor vitae</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react d-flex">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
                             </div>
                         </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title">Vivamus non dignissim elt</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title"> In commodo dolor vitae</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title">Vivamus non dignissim elt</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title"> In commodo dolor vitae</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title">Vivamus non dignissim elt</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
-                        </div>
-                        <div class="slider-element__detail">
-                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
-                            <div class="block">
-                                <ul>
-                                    <li>Jan</li>
-                                    <li>23</li>
-                                </ul>
-                            </div>
-                            <div class="detail-title">Ut lacinia erat ut diam volutpat</div>
-                            <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
-                                hendrerit, elit a lacinia suscipit, orcimauris.</div>
-                            <div class="client-react">
-                                <a href=""><i class="fa-regular fa-comment"></i>12</a>
-                                <a href=""><i class="fa-regular fa-heart"></i>6</a>
-                            </div>
+                        <div class="detail-title"> In commodo dolor vitae</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
                         </div>
                     </div>
-                </div>  
-            </div>
+                    <div class="row-detail">
+                        <div class="row-detail__image">
+                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
+                            <div class="day">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-title"> Vivamus non dignissim elit</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orci mauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                        </div>
+                    </div>
+                    <div class="row-detail">
+                        <div class="row-detail__image">
+                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
+                            <div class="day">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-title"> Ut lacinia erat ut diam volutpat</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                        </div>
+                    </div>
+                    <div class="row-detail">
+                        <div class="row-detail__image">
+                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
+                            <div class="day">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-title"> In commodo dolor vitae</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                        </div>
+                    </div>
+                    <div class="row-detail">
+                        <div class="row-detail__image">
+                            <img src="./assets/image/img2-slider.jpg" alt="image-1 slider">
+                            <div class="day">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-title"> Vivamus non dignissim elit</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                        </div>
+                    </div>
+                    <div class="row-detail">
+                        <div class="row-detail__image">
+                            <img src="./assets/image/img3-slider.jpg" alt="image-1 slider">
+                            <div class="day">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-title"> Ut lacinia erat ut diam volutpat</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                        </div>
+                    </div>
+                    <div class="row-detail">
+                        <div class="row-detail__image">
+                            <img src="./assets/image/img1-slider.jpg" alt="image-1 slider">
+                            <div class="day">
+                                <ul>
+                                    <li>Jan</li>
+                                    <li>23</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-title"> In commodo dolor vitae</div>
+                        <div class="paragr">Aliquam tempor sagittis neque. vel aliquam risus consectetur vel.Aenean
+                            hendrerit, elit a lacinia suscipit, orcimauris.</div>
+                        <div class="client-react d-flex">
+                            <a href=""><i class="fa-regular fa-comment"></i>12</a>
+                            <a href=""><i class="fa-regular fa-heart"></i>6</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>
     <div class="footer">
@@ -451,20 +439,20 @@
                         <div class="content-descr">
                             <div class="content-descr__row d-flex justify-content-start">
                                 <ul class="nav-li">
-                                    <li>Home</li>
-                                    <li>About Us</li>
-                                    <li>Our Blog</li>
-                                    <li>Women</li>
-                                    <li>Men</li>
-                                    <li>Contact Us</li>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Our Blog</a></li>
+                                    <li><a href="">Women</a></li>
+                                    <li><a href="">Men</a></li>
+                                    <li><a href="">Contact Us</a></li>
                                 </ul>
                                 <ul class="nav-li">
-                                    <li>FAQs</li>
-                                    <li>Featured Brands</li>
-                                    <li>Gift Vouchers</li>
-                                    <li>Affiliates</li>
-                                    <li>Specials Gift</li>
-                                    <li>Terms & Conditions</li>
+                                    <li><a href="">FAQs</a></li>
+                                    <li><a href="">featured Brands</a></li>
+                                    <li><a href="">Gift Vouchers</a></li>
+                                    <li><a href="">Affiliattes</a></li>
+                                    <li><a href="">Special Gifts</a></li>
+                                    <li><a href="">Terms & Conditions</a></li>
                                 </ul>
 
                             </div>
@@ -512,10 +500,10 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
 
     <script>
-        $('.slider-element__row').slick({
+        $('.row').slick({
             dots: true,
             infinite: false,
             prevArrow: false,
@@ -523,13 +511,22 @@
             speed: 1200,
             slidesToShow: 3,
             slidesToScroll: 3,
-            variableWidth: true,
+            // variableWidth: true,
             responsive: [
+                {
+                breakpoint: 1170,
+                setting: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                }
+                },
                 {
                 breakpoint: 1024,
                 setting: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                     infinite: true,
                     dots: true,
                 }

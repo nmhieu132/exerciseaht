@@ -3,148 +3,125 @@ $color-white: rgb(255,255,255);
 $color-grey: rgb(82,82,82);
 $color-black: rgb(0,0,0);
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-Regular.ttf');
-    font-style: normal;
-    display: block;
-    font-weight: 400;
+a{
+    text-decoration: none;
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-Medium.ttf');
-    font-style: normal;
-    display: block;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
-    font-style: normal;
-    display: block;
-    font-weight: 800;
-}
-
-.banner{
-    padding-top: 30px;
-    &-ad{
+.banner {
+    margin: 30px 0 47px 0;
+    .container {
+        max-width: 1170px;
+    }
+    img {
+        width: 100%;
+    }
+    &-ad {
         display: flex;
-        justify-content: center;
-        &__horizontal{
-            padding-right: 15px;
-
-            &__ad01{
-                position: relative;
-
-                .ad01__descr{
-                    position: absolute;
-                    left: 44.9%;
-                    top: 56.9%;
-                    font-weight: 700;
-                    font-size: 30px;
-                    font-family: "Pacifico";
-                    line-height: 1.2;
-                    letter-spacing: 0.1px;
-                }
-
-                .ad01-btn{
-                    position:absolute;  
-                    color:$color-white;
-                    background-color: $color-purple;
-                    width: 106px;
-                    height: 40px;
-                    left: 73.3%;
-                    top: 65.65%;
-                    text-decoration: none;
-                    font-size:14px;
-                    font-family:"Montserrat";
-                    font-weight: 400;
-                    text-align: center;
-                    padding-top: 8px;
-                }
+        &__left {
+            position: relative;
+            margin-right: 15px;
+            &__detail {
+                position: absolute;
+                top: 54%;
+                right: 90px;
+            }
+            &__descr {
+                font-family: "Pacifico";
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 1.2;
+                letter-spacing: 0.1px;
+                margin-bottom: 13px;
+            }
+            &__btn {
+                height: 40px;
+                width: 106px;
+                background-color: $color-purple;
+                color: $color-white;
+                font-size:14px;
+                font-family:"Montserrat";
+                display: block;
+                font-weight: 400;
+                text-align: center;
+                padding-top: 8px;
+                text-decoration: none;
+                margin-left: 212px;
             }
         }
 
-        &__vertical{
-            padding-left: 15px;
+        &__right {
+            margin-left: 15px;
             display: flex;
             flex-direction: column;
-            &__ad02{
+            &__top {
                 position: relative;
+                margin-bottom: 30px;
+                &__detail {
+                    position: absolute;
+                    top: 42.5%;
+                    left: 57px;
+                }
 
-                .ad02__descr1{
-                    position:absolute;
+                .descr__top {
+                    color: $color-grey;
                     font-size: 16px;
                     letter-spacing: 3.3px;
                     font-family: "Montserrat";
-                    color: $color-grey;
-                    top:42%;
-                    left:15.2%;
                     text-transform: uppercase;
                     font-weight: 500;
                     line-height: 1.2;
+                    margin-bottom: 0;
                 }
-
-                .ad02__descr2{
-                    position:absolute;
+                
+                .descr__bot {
                     font-size: 20px;
                     font-family: "Montserrat";
                     color: $color-black;
-                    top:52%;
-                    left:15.2%;
                     text-transform: uppercase;
                     font-weight: 800;  
                     line-height: 1.2;
                 }
             }
-
-            &__ad03{
-                padding-top:30px;
+            &__bot {
                 position: relative;
-
-                .ad03__descr1{
-                    position:absolute;
-                    font-size: 16px;
-                    font-family: "Montserrat";
-                    letter-spacing: 3.5px;
-                    color: rgb(97, 97, 97);
-                    top:41.5%;
-                    left:10.5%;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    line-height: 1.2;
-                }
-
-                .ad03__descr2{
-                    position:absolute;
-                    font-size: 20px;
-                    font-family: "Montserrat";
-                    color: black;
-                    top: 47%;
-                    left:10.5%;
-                    text-transform: uppercase;
-                    font-weight: 800;  
-                    line-height: 1.2;
-                }
-                
-                .ad03-btn{
-                    position:absolute;  
-                    color:white;
-                    background-color: #8262b5;
-                    width: 108px;
-                    height: 40px;
-                    left: 11.5%;
-                    top: 58.5%;
+                margin-bottom: 30px;
+                &__detail {
+                    position: absolute;
+                    top: 36.2%;
+                    left: 38px;
                     text-decoration: none;
-                    font-size:14px;
-                    font-family:"Montserrat";
-                    font-weight: 400;
-                    text-align: center;
-                    padding-top: 8px;
-                    padding-left: 5px;
+                    .descr__top {
+                        font-size: 16px;
+                        font-family: "Montserrat";
+                        letter-spacing: 3.5px;
+                        color: rgb(97, 97, 97);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        margin-bottom: 0;
+                    }
+                    .descr__bot {
+                        font-size: 20px;
+                        font-family: "Montserrat";
+                        color: black;
+                        text-transform: uppercase;
+                        font-weight: 800;  
+                        line-height: 1.2;
+                    }
                 }
+            }
+            &__btn {
+                height: 40px;
+                width: 106px;
+                background-color: $color-purple;
+                color: $color-white;
+                font-size:14px;
+                font-family:"Montserrat";
+                display: block;
+                font-weight: 400;
+                text-align: center;
+                padding-top: 10px;
+                text-decoration: none;
             }
         }
     }

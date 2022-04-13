@@ -3,7 +3,7 @@ $color-home:rgb(130, 98, 181);
 $color-black: rgb(34,34,34);
 $topmenu-text: rgb(82,82,82);
 
-@font-face{
+@font-face {
     font-family: 'Open Sans',sans-serif;
     src: url('/exerciseaht/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
     font-weight: 700;
@@ -27,10 +27,34 @@ $topmenu-text: rgb(82,82,82);
     font-style: normal;
 }
 
-ul,li{
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight:600;
+    display: block;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/exerciseaht/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('/exerciseaht/fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+}
+
+ul,li {
     list-style: none;
 }
-.cover{
+.cover {
     position: fixed;
     height: 100vh;
     width: 100vh;
@@ -94,21 +118,22 @@ ul,li{
                 .responsive-bars{
                     display: none;
                 }
-
                 &__list{
-                    padding-bottom: 0;
-                    position: absolute;
-                    left: 25.3%;
-                    top: 8%;
+                    margin-right: 148px;
                     display: flex;
                     align-items: center;
                     .list__items{
-                        &:first-child{
-                            color: $color-home;
-                        }
-                        padding-left: 55px;
+                        margin-left: 55px;
                         text-transform: uppercase;
-                        padding-top: 8px;
+                        font-size: 14px;
+                        font-family: "Montserrat";
+                        font-weight: bold;
+                        color: $color-black;
+                    }
+                    .home{
+                        color: $color-home;
+                        margin-left: 55px;
+                        text-transform: uppercase;
                         font-size: 14px;
                         font-family: "Montserrat";
                         font-weight: bold;
@@ -116,13 +141,12 @@ ul,li{
                 }
                 
                 &__cart{
-                    margin-right: 30px;
+                    margin: 6px 30px 0 0;
                     font-size: 30px;
-                    margin-bottom: 0;
                     display: flex;
                     align-items: center;
                     .cart__list{
-                        padding-left: 22px;
+                        margin-left: 25px;
                     }
                 }
             }
