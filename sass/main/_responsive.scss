@@ -265,23 +265,28 @@ $color-lightgrey: rgb(199, 198, 198);
   .header-menu__topmenu {
     display: none;
   }
+  .cart__list{
+      display: none;
+  }
   .header-menu__mainmenu__list {
     top: 80px;
   }
   .banner-ad__left {
     .banner-ad__left__btn {
-      width: 100px;
+      width: 87px;
       height: 37px;
-      font-size: 14px;
+      font-size: 12px;
+      margin-left: 117px;
     }
     .banner-ad__left__descr {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
   .banner-ad__right__bot {
     .banner-ad__right__btn {
-      width: 100px;
+      width: 87px;
       height: 36px;
+      font-size: 12px;
     }
   }
   .products{
@@ -294,24 +299,35 @@ $color-lightgrey: rgb(199, 198, 198);
     .container {
       padding: 0 15px;
     }
-    .footer-content__colleft {
+    &-content__colleft {
       width: 100%;
     }
-    .footer-content__colmid {
+    &-content__colmid {
       margin-bottom: 30px;
       width: 100%;
     }
-    .footer-content__colright {
+    &-content__colright {
       width: 100%;
+    }
+    &-copyright__content{
+        flex-direction: column;
+        .list-icon{
+            font-size: 11px;
+        }
+        .copyright-aht{
+            font-size: 11px;
+        }
     }
   }
 }
 
 @media screen and (max-width: 426px) {
   // header section
-  .header-menu__mainmenu__cart {
-    display: none;
-  }
+    .header-menu__mainmenu__cart {
+        .cart__list {
+            display: none;
+        }
+    }
   .header-menu__mainmenu {
     margin-right: 30px;
   }
@@ -370,7 +386,7 @@ $color-lightgrey: rgb(199, 198, 198);
 @media screen and (max-width: 375px) {
   // header section
   .header-menu__mainmenu__list {
-    top: 16%;
+    top: 20px;
     right: 0;
     width: 26vh;
     height: 100vh;

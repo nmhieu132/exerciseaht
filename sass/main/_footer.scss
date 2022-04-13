@@ -179,8 +179,10 @@ a:hover{
 
   .footer-copyright {
     padding-bottom: 18px;
-    display: flex;
-    justify-content: space-between;
+    &__content{
+      display: flex;
+      justify-content: space-between;
+    }
     .copyright-aht {
       font-size: 14px;
       font-family: "Montserrat";

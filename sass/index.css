@@ -190,7 +190,7 @@ a {
 }
 
 .banner {
-  margin: 30px 0 40px 0;
+  margin: 30px 0 47px 0;
 }
 
 .banner .container {
@@ -538,7 +538,7 @@ a {
 
 .slider .row {
   margin: 50px 0 0;
-  padding-bottom: 110px;
+  padding-bottom: 106px;
 }
 
 .slider .row .slick-slide {
@@ -883,6 +883,9 @@ a:hover {
 
 .footer .footer-copyright {
   padding-bottom: 18px;
+}
+
+.footer .footer-copyright__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1180,20 +1183,25 @@ a:hover {
   .header-menu__topmenu {
     display: none;
   }
+  .cart__list {
+    display: none;
+  }
   .header-menu__mainmenu__list {
     top: 80px;
   }
   .banner-ad__left .banner-ad__left__btn {
-    width: 100px;
+    width: 87px;
     height: 37px;
-    font-size: 14px;
+    font-size: 12px;
+    margin-left: 117px;
   }
   .banner-ad__left .banner-ad__left__descr {
-    font-size: 22px;
+    font-size: 18px;
   }
   .banner-ad__right__bot .banner-ad__right__btn {
-    width: 100px;
+    width: 87px;
     height: 36px;
+    font-size: 12px;
   }
   .products .products-items__detail {
     width: 100%;
@@ -1202,20 +1210,32 @@ a:hover {
   .footer .container {
     padding: 0 15px;
   }
-  .footer .footer-content__colleft {
+  .footer-content__colleft {
     width: 100%;
   }
-  .footer .footer-content__colmid {
+  .footer-content__colmid {
     margin-bottom: 30px;
     width: 100%;
   }
-  .footer .footer-content__colright {
+  .footer-content__colright {
     width: 100%;
+  }
+  .footer-copyright__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-copyright__content .list-icon {
+    font-size: 11px;
+  }
+  .footer-copyright__content .copyright-aht {
+    font-size: 11px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .header-menu__mainmenu__cart {
+  .header-menu__mainmenu__cart .cart__list {
     display: none;
   }
   .header-menu__mainmenu {
@@ -1271,7 +1291,7 @@ a:hover {
 
 @media screen and (max-width: 375px) {
   .header-menu__mainmenu__list {
-    top: 16%;
+    top: 20px;
     right: 0;
     width: 26vh;
     height: 100vh;
