@@ -9,7 +9,7 @@ a{
     text-decoration: none;
 }
 
-.slider{
+.slider{    
     background-image: url('/exerciseaht/assets/image/bg-slider.jpg');
 
     .container{
@@ -53,10 +53,10 @@ a{
         margin: 50px 0 0 ;
         padding-bottom: 106px;
         .slick-slide {
-            margin : 3px 18px;
+            margin : 3px 15px;
         }
         .slick-list {
-            margin : 0 -18px;
+            margin : 0 -15px;
         }
         .slick-dots{
             bottom :63px;

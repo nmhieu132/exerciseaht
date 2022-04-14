@@ -97,7 +97,7 @@ ul,li {
         }
         
             &__mainmenu{
-                margin-left: 30px;
+                margin: 0 30px;
                 height: 79px;
                 @include dflex;
                 &__franco{
@@ -138,10 +138,13 @@ ul,li {
                             color: $color-black;
                         }
                     }
+                    .cart__list{
+                        display: none;
+                    }
                 }
                 
                 &__cart{
-                    margin: 6px 30px 0 0;
+                    margin-top: 6px;
                     font-size: 30px;
                     display: flex;
                     align-items: center;
